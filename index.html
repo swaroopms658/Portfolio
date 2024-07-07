@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MS SWAROOP PORTFOLIO</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          MS SWAROOP
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          swaroopms658@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +91-8431950132
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div class="first">
+        <img src="html_finalprojimages/swaroop.jpeg" class="profile_image">
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm M.S SWAROOP! 
+          </h1>
+          <p>
+            Aspiring fresher with internship experience,open to full time SDE roles.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+       <section id="skills">
+     
+
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>1 years experience</p>
+        </div> 
+        
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/python.png"/>
+            <h6>Python</h6>
+            <p>1 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/machine learning.png"/>
+            <h6>Machine Learning</h6>
+            <p>1 year experience</p>
+          </div>  
+
+         <div class="skill">
+            <img src="html_finalprojimages/django.png"/>
+            <h6>django</h6>
+            <p>1 years experience</p>
+          </div>  
+
+           
+  
+
+  
+
+  
+
+  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Personal Portfolio</h3>
+            <ul>
+              <li>Developed a personal portfolio which introduces me</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Machine Learning Models</h3>
+            <ul>
+              <li>It demonstrates the process of building a web
+                application that utilizes a machine learning model. Functional Model Demonstration: A working example of the
+                web app is included for reference, showcasing its capabilities. Diverse Model Applications: The project provides
+                implementations for two distinct machine learning models: one for predicting diabetes diagnosis and another for
+                customer category prediction</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Dice Game</h3>
+            <ul>
+              <li>Practical DOM Manipulation Techniques The project focuses on demonstrating practical ways to
+                interact with and modify the Document Object Model (DOM) using JavaScript. Enhanced Web Page Interactivity
+                By manipulating the DOM, the project aims to create more dynamic and interactive web pages. Improved User
+                Experience Effective DOM manipulation can lead to a more engaging and user-friendly web experience</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          SWAROOP is a very quick learner and quickly grasps key concepts of Web development. 
+          he got a great attitude & she is an excellent team player. 
+          he has a curious mind and asks the right question. 
+          he takes initiative within a team and has potentials to lead the team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with SWAROOP has been an awesome experience. 
+          he is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need his expertise I would definitely want to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with SWAROOP during the initial phase of our venture which needed Web development. 
+          he is a committed resource who has in depth knowledge about the domain. 
+          he will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>

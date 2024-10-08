@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#about" onclick="showSection('about')">About Me</a>
+      <a href="#skills" onclick="showSection('skills')">Skills</a>
+      <a href="#projects" onclick="showSection('projects')">Projects</a>
+      <a href="#contact" onclick="showSection('contact')">Contact</a>
+      <a href="static/MS -BE.pdf" download>Download Resume</a>
+      <a href="https://github.com/swaroopms658" target="_blank">GitHub</a>
+    </div>
+
+    <div class="content">
+      <div id="about" class="section">
+        <h2>About Me</h2>
+        <img
+          src="static/swaroop (2).jpeg"
+          alt="Profile Picture"
+          class="profile-img"
+        />
+        <p>
+          Hi Im Swaroop Welcome to my portfolio. Navigate through the sections
+          to learn more about me!
+        </p>
+      </div>
+
+      <div id="skills" class="section" style="display: none">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Machine learning</div>
+          <div class="skill">Django</div>
+          <div class="skill">Python</div>
+          <div class="skill">Data Analysis</div>
+        </div>
+      </div>
+
+      <div id="projects" class="section" style="display: none">
+        <h2>Projects</h2>
+        <div class="project">
+          Project 1: Implemented an image compression application using an
+          unsupervised machine learning algorithm. The application compresses
+          images by reducing the color palette to a specified number of colors.
+          In this project, the original image was compressed using 16 colors.
+        </div>
+        <div class="project">
+          Project 2: Machine Learning Model Web App Development: Demonstrates
+          the process of building a web application that utilizes a machine
+          learning model. Functional Model Demonstration: A working example of
+          the web app is included for reference, showcasing its capabilities.
+          Diverse Model Applications: Provides implementations for two distinct
+          machine learning models: one for predicting diabetes diagnosis and
+          another for customer category prediction
+        </div>
+        <div class="project">
+          Project 3:A C++-based restaurant management system that efficiently
+          handles orders, inventory, and sales data. Menu Management: Defines
+          and updates the restaurant’s menu items, including prices and
+          descriptions. Order Processing: Takes customer orders, calculates
+          total costs, and tracks item availability. Inventory Tracking:
+          Monitors stock levels of food items and alerts when supplies are low.
+          Sales Reporting: Generates daily, weekly, and monthly sales reports,
+          including revenue, item popularity, and profit margins
+        </div>
+        <div class="project">
+          Project 4:Practical DOM Manipulation Techniques: Demonstrates
+          practical ways to interact with and modify the Document Object Model
+          (DOM) using JavaScript. Improved User Experience: Effective DOM
+          manipulation can lead to a more engaging and user-friendly web
+          experience.
+        </div>
+      </div>
+
+      <div id="contact" class="section" style="display: none">
+        <h2>Contact</h2>
+        <iframe
+          src="https://forms.gle/2nRXSwx2eJ79wHzW8"
+          width="640"
+          height="800"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+      <p>&copy; 2024 M.S Swaroop. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

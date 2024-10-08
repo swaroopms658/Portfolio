@@ -1,0 +1,103 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b,
+    #86a8e7,
+    #91eae4
+  ); /* Multi-color gradient */
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* White background for header */
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333; /* Dark background for navbar */
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: #575757; /* Hover effect */
+}
+
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+  background: rgba(
+    247,
+    242,
+    242,
+    0.9
+  ); /* Slightly transparent white background for content */
+  border-radius: 8px;
+}
+
+.section {
+  display: none; /* Initially hide all sections */
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular profile image */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #444; /* Dark background for skills */
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 30%;
+  text-align: center;
+  color: #fff;
+}
+
+.project {
+  background: #444; /* Dark background for projects */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333; /* Dark background for footer */
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

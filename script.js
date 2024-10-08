@@ -1,14 +1,3 @@
-function showSection(sectionId) {
-  const sections = document.querySelectorAll(".section");
-  sections.forEach((section) => {
-    if (section.id === sectionId) {
-      section.style.display = "block"; // Show selected section
-    } else {
-      section.style.display = "none"; // Hide other sections
-    }
-  });
-}
-// Add this to your existing script.js file
 document.getElementById("mobile-menu").addEventListener("click", function () {
   const navbarLinks = document.getElementById("navbar-links");
   navbarLinks.classList.toggle("active"); // Toggle active class to show/hide links

@@ -32,6 +32,8 @@ p {
   align-items: center; /* Center items vertically */
   background-color: #333; /* Dark background for navbar */
   padding: 1rem;
+  position: relative; /* Ensure proper positioning for mobile menu */
+  z-index: 1000; /* Keep navbar above other elements */
 }
 
 .menu-toggle {
@@ -50,6 +52,7 @@ p {
 /* Navbar links */
 .navbar-links {
   display: flex; /* Flex container for navbar links */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .navbar-links a {
@@ -98,7 +101,7 @@ p {
   background: #444; /* Dark background for skills */
   padding: 10px;
   border-radius: 5px;
-  flex: 1 1 30%; /* Adjusted for mobile */
+  flex: 1 1 45%; /* Adjusted for mobile */
   text-align: center;
   color: #fff;
 }
@@ -146,5 +149,9 @@ p {
 
   .navbar-links.active {
     display: flex; /* Show links when active */
+  }
+
+  .content {
+    padding: 10px; /* Adjusted padding for mobile */
   }
 }

@@ -3,18 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Swaroop's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <a href="#about" onclick="showSection('about')">About Me</a>
-      <a href="#skills" onclick="showSection('skills')">Skills</a>
-      <a href="#projects" onclick="showSection('projects')">Projects</a>
-      <a href="#contact" onclick="showSection('contact')">Contact</a>
-      <a href="static/MS -BE.pdf" download>Download Resume</a>
-      <a href="https://github.com/swaroopms658" target="_blank">GitHub</a>
-    </div>
+    <header>
+      <h1>Swaroop's Portfolio</h1>
+      <p>
+        Welcome to my professional portfolio. Navigate through the sections to
+        learn more about me!
+      </p>
+    </header>
+
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="navbar-links" id="navbar-links">
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#skills" onclick="showSection('skills')">Skills</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+        <a href="static/MS -BE.pdf" download>Download Resume</a>
+        <a href="https://github.com/swaroopms658" target="_blank">GitHub</a>
+      </div>
+    </nav>
 
     <div class="content">
       <div id="about" class="section">
@@ -25,8 +40,13 @@
           class="profile-img"
         />
         <p>
-          Hi Im Swaroop Welcome to my portfolio. I completed my internship as a ML Intern at karnadu technologies Pvt Ltd ,for further details Navigate through the sections
-          to learn more about me!
+          Hello! I'm Swaroop, a dedicated software developer with a passion for
+          creating efficient and user-friendly applications. With a strong
+          foundation in various programming languages and technologies, I thrive
+          on transforming ideas into functional solutions. My commitment to
+          continuous learning drives me to stay updated with the latest industry
+          trends. For further details about my skills and projects, please
+          navigate to the respective sections of this portfolio.
         </p>
       </div>
 
@@ -36,11 +56,11 @@
           <div class="skill">HTML</div>
           <div class="skill">CSS</div>
           <div class="skill">JavaScript</div>
-          <div class="skill">SQL</div>
-          <div class="skill">Machine learning</div>
-          <div class="skill">Django</div>
+          <div class="skill">React</div>
+          <div class="skill">Node.js</div>
           <div class="skill">Python</div>
-          <div class="skill">Data Analysis</div>
+          <div class="skill">Java</div>
+          <div class="skill">SQL</div>
         </div>
       </div>
 
@@ -94,9 +114,10 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
     <footer class="footer">
-      <p>&copy; 2024 M.S Swaroop. All Rights Reserved.</p>
+      <p>&copy; 2024 Swaroop. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -28,12 +28,31 @@ p {
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
   background-color: #333; /* Dark background for navbar */
   padding: 1rem;
 }
 
-.navbar a {
+.menu-toggle {
+  display: none; /* Hide menu toggle button initially */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex; /* Flex container for navbar links */
+}
+
+.navbar-links a {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
@@ -42,7 +61,7 @@ p {
   border-radius: 4px;
 }
 
-.navbar a:hover {
+.navbar-links a:hover {
   background-color: #575757; /* Hover effect */
 }
 
@@ -51,9 +70,9 @@ p {
   margin: 2rem auto;
   padding: 20px;
   background: rgba(
-    247,
-    242,
-    242,
+    255,
+    255,
+    255,
     0.9
   ); /* Slightly transparent white background for content */
   border-radius: 8px;
@@ -79,7 +98,7 @@ p {
   background: #444; /* Dark background for skills */
   padding: 10px;
   border-radius: 5px;
-  flex: 1 1 30%;
+  flex: 1 1 30%; /* Adjusted for mobile */
   text-align: center;
   color: #fff;
 }
@@ -101,35 +120,8 @@ p {
   bottom: 0;
   width: 100%;
 }
-/* Add this to your existing styles.css */
 
-.menu-toggle {
-  display: none; /* Hide menu toggle button initially */
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  height: 3px;
-  width: 30px;
-  background-color: white;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
-/* Navbar adjustments */
-.navbar {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  justify-content: space-between; /* Space between elements */
-  align-items: center; /* Center items vertically */
-}
-
-.navbar-links {
-  display: flex; /* Flex container for navbar links */
-}
-
-/* Show navbar links in a column on smaller screens */
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 600px) {
   .navbar-links {
     display: none; /* Hide links by default */
@@ -148,11 +140,11 @@ p {
     text-align: center;
   }
 
-  .navbar-links.active {
-    display: flex; /* Show links when active */
-  }
-
   .menu-toggle {
     display: flex; /* Show the menu toggle button */
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show links when active */
   }
 }
